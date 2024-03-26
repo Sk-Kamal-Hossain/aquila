@@ -4,7 +4,7 @@
     * @package Aquila
 */
 
-function aquila_enqueue_scripts(){
+function aquila_enqueue_scripts() : void{
 
     // Register-Style
     wp_register_style('style-css', get_stylesheet_uri(), [], filemtime(get_template_directory() . '/style.css'), 'all');
@@ -24,6 +24,4 @@ function aquila_enqueue_scripts(){
 }
 
 add_action('wp_enqueue_scripts', 'aquila_enqueue_scripts');
-
-?>
 
