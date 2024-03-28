@@ -1,13 +1,11 @@
 <?php
 
 namespace AQUILA_THEME\Inc\Traits;
-
 trait Singleton
 {
     public function __construct()
     {
     }
-
     public function __clone(): void
     {
         // TODO: Implement __clone() method.
