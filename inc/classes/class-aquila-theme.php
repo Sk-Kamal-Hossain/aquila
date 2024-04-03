@@ -17,6 +17,7 @@ class AQUILA_THEME
         // load class
 
         Assets::get_instance();
+        Menus::get_instance();
 
         $this->setup_hooks();
     }
@@ -45,7 +46,7 @@ class AQUILA_THEME
         add_theme_support('custom-background', [
             'default-color' => '0000ff',
             'default-image' => '',
-            'default-repeat'     => 'no-repeat',
+            'default-repeat'=> 'no-repeat',
         ]);
 
         add_theme_support('post-thumbnails');
